@@ -1,5 +1,11 @@
 -- customize mason plugins
 return {
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = { "sonarlint-language-server" },
+    },
+  },
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
