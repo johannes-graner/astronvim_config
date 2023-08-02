@@ -28,6 +28,10 @@ return {
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
     ["<leader>dc"] = { continue, desc = "Start/Continue (F5)" },
+    ["<leader>fw"] = {
+      function() require("telescope").extensions.live_grep_args.live_grep_args() end,
+      desc = "Live Grep with arguments",
+    },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
