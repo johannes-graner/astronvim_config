@@ -32,6 +32,7 @@ return {
       function() require("telescope").extensions.live_grep_args.live_grep_args() end,
       desc = "Live Grep with arguments",
     },
+    ["<leader>gR"] = { ":!git add $(git diff --cached --name-only)<CR>", desc = "Re-add staged files" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
   },
