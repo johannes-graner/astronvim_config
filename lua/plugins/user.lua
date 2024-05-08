@@ -34,6 +34,7 @@ return {
     dependencies = { "ggandor/leap.nvim" },
     config = function() require("flit").setup() end,
   },
+  "jose-elias-alvarez/typescript.nvim",
 
   -- Added by AstroNvim template
   "andweeb/presence.nvim",
