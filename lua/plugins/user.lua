@@ -7,6 +7,7 @@ return {
   -- == Examples of Adding Plugins ==
 
   "catppuccin/nvim",
+
   {
     "ggandor/leap.nvim",
     lazy = false,
@@ -28,13 +29,21 @@ return {
       }
     end,
   },
+
   {
     "ggandor/flit.nvim",
     lazy = false,
     dependencies = { "ggandor/leap.nvim" },
     config = function() require("flit").setup() end,
   },
+
   "jose-elias-alvarez/typescript.nvim",
+
+  {
+    "nvim-telescope/telescope-live-grep-args.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim" },
+    config = function() require("telescope").load_extension "live_grep_args" end,
+  },
 
   -- Added by AstroNvim template
   "andweeb/presence.nvim",
