@@ -12,6 +12,7 @@ return {
         "lua_ls",
         "pyright",
         "tsserver",
+        "yamlls",
         -- add more arguments for adding more language servers
       })
     end,
