@@ -28,6 +28,7 @@ return {
         "stylua",
         "ruff",
         "black",
+        "sonarlint-language-server",
         -- add more arguments for adding more null-ls sources
       })
     end,
