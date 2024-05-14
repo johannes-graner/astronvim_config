@@ -1,6 +1,14 @@
 ---@type LazySpec
 return {
   {
+    "jay-babu/mason-null-ls.nvim",
+    opts = {
+      ensure_installed = {
+        "sonarlint-language-server",
+      },
+    },
+  },
+  {
     url = "https://gitlab.com/schrieveslaach/sonarlint.nvim",
     ft = { "python", "typescript" },
     dependencies = {
