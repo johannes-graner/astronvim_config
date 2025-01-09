@@ -8,6 +8,9 @@ return {
         -- add custom handler
         rust_analyzer = function(_, opts) require("rust-tools").setup { server = opts } end,
       },
+      config = {
+        rust_analyzer = { settings = { ["rust-analyzer"] = { check = { command = "clippy" } } } },
+      },
     },
   },
   {
