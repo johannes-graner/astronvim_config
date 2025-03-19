@@ -9,6 +9,8 @@ return {
       "lua",
       "vim",
       "python",
+      "hcl",
+      "terraform",
       -- add more arguments for adding more treesitter parsers
     })
   end,
