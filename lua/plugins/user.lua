@@ -6,7 +6,7 @@ return {
 
   -- == Examples of Adding Plugins ==
 
-  "catppuccin/nvim",
+  "Mofiqul/dracula.nvim",
 
   "jose-elias-alvarez/typescript.nvim",
 
